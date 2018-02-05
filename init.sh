@@ -41,13 +41,18 @@ export EDITOR=nano;
 USERNAME=`whoami`;
 
 # Give user instructions on how to add a cron job
-printf "\n==============\n";
-printf "The bucket and cron job have been generated.\n";
-printf "Now we need to add the generated cron job file to the execution list.\n";
-printf "Please copy the line of code below (between the ===) and paste it at the bottom of the file when the nano editor appears (REMEMBER TO SAVE IT TOO!)";
-printf "\n===";
-printf "0 * * * * sh /home/$USERNAME/clocoss-4/cron-job.sh";
-printf "===\n";
+echo "";
+echo "==============";
+echo "The bucket and cron job have been generated.";
+echo "";
+echo "Now we need to add the generated cron job file to the execution list.";
+echo "";
+echo "Please copy the line of code below (between the ===) and paste it at the bottom of the file when the nano editor appears (REMEMBER TO SAVE IT TOO!)";
+echo "";
+echo "===";
+echo "0 * * * * sh /home/$USERNAME/clocoss-4/cron-job.sh";
+echo "===";
+echo "";
 
 # Wait for the user to confirm they are ready
 read -p "Press enter when you are ready...";
